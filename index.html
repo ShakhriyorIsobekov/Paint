@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Shox - Paint</title>
    <!-- STYLES -->
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+   <div class="container">
+      <section class="drawing-board">
+         <canvas></canvas>
+      </section>
+      <section class="tools-board">
+         <div class="row">
+            <label class="title">Shakllar</label>
+            <ul class="options">
+               <li class="option tool" id="rectangle">
+                  <img src="./icons/rectangle.svg" alt="icon of rectangle" class="option-img">
+                  <span class="option-span">To'rtburchak</span>
+               </li>
+               <li class="option tool" id="circle">
+                  <img src="./icons/circle.svg" alt="icon of circle" class="option-img">
+                  <span class="option-span">Doira</span>
+               </li>
+               <li class="option tool" id="triangle">
+                  <img src="./icons/triangle.svg" alt="icon of triangle" class="option-img">
+                  <span class="option-span">Uch burchak</span>
+               </li>
+               <li class="option">
+                  <input type="checkbox" name="" id="fill-color">
+                  <label for="fill-color">Rangni to'ldirish</label>
+               </li>
+            </ul>
+         </div>
+         <div class="row">
+            <label class="title">Variantlar</label>
+            <ul class="options">
+               <li class="option tool active" id="brush">
+                  <img src="./icons/brush.svg" alt="icon of brush" class="options__img">
+                  <span>Brush</span>
+               </li>
+               <li class="option tool" id="ereaser">
+                  <img src="./icons/eraser.svg" alt="icon of ereaser" class="options__img">
+                  <span>O'chirgich</span>
+               </li>
+               <li class="option">
+                  <input type="range" id="size-slider" min="1" max="30" value="5">
+               </li>
+            </ul>
+         </div>
+         <div class="row colors">
+            <label class="title">Ranglar</label>
+            <ul class="options">
+               <li class="option"></li>
+               <li class="option selected"></li>
+               <li class="option"></li>
+               <li class="option"></li>
+               <li class="option">
+                  <input type="color" id="color-picker" value="#4a98f7">
+               </li>
+            </ul>
+         </div>
+         <div class="row butons">
+            <button class="clear-canvas">O'chirish</button>
+            <button class="save-img">Saqlash</button>
+         </div>
+      </section>
+   </div>
 
 
    <script src="js/main.js"></script>
 </body>
+
 </html>
