@@ -1,4 +1,4 @@
-<h1>Paint</h1>
+<h1>Paint 🎨</h1>
 <br/>
 <p>If you are the person who is mad about painting, then this app is for you! You are able to draw anything you desire. For instance: shapes, rectangles,
 trinagles, and so on. I mainly used Javascript to create this awesome app. To be exact, I used Canvas. However, building this app was a little bit 
